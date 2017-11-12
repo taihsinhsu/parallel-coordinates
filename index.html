@@ -2,7 +2,6 @@
 <meta charset="utf-8">
 <html>
   <head>
-    <title> parallel coordinates </title>
     <style>
       svg {
         font: 10px sans-serif;
@@ -36,10 +35,11 @@
         text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
         cursor: move;
       }
-    </style>
+
+      </style>
   </head>
+
   <body>
-  
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script>
 
@@ -62,7 +62,7 @@
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("cars.csv", function(error, cars) {
+    d3.csv("energysim.csv", function(error, cars) {
 
       // Extract the list of dimensions and create a scale for each.
       x.domain(dimensions = d3.keys(cars[0]).filter(function(d) {
