@@ -44,6 +44,9 @@
   </head>
 
   <body>
+
+    <svg id="svg2">
+    </svg>
     
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script>
@@ -61,7 +64,7 @@
         background,
         foreground;
 
-    var svg = d3.select("body").append("svg")
+    var svg = d3.select("#svg2")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
