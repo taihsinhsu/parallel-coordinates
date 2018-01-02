@@ -17,7 +17,7 @@
       .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("paperData.csv", function(error, cars) {
+    d3.csv("paperData_Mumbai.csv", function(error, cars) {
 
       // Extract the list of dimensions and create a scale for each.
       x.domain(dimensions = d3.keys(cars[0]).filter(function(d) {
